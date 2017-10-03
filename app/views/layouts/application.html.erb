@@ -11,16 +11,10 @@
   </head>
   <body>
     <div class="navbar-wagon">
-    <!-- Logo -->
-    <%= link_to root_path, class: "navbar-wagon-brand" do %>
-      <%= image_tag "logo.png" %>
-    <% end %>
-
-    <!-- Right Navigation -->
-    <div class="navbar-wagon-right hidden-xs hidden-sm">
-
-      <!-- Links -->
-      <%= link_to "New cocktail", new_cocktail_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to root_path, class: "navbar-wagon-brand" do %>
+        <%= image_tag "logo.png" %>
+      <% end %>
+        <%= link_to "Create a cocktail", new_cocktail_path, class: "navbar-wagon-item btn btn-danger" %>
     </div>
   </div>
     <%= yield %>
